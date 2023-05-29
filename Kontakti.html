@@ -1,0 +1,147 @@
+<html>
+<meta charset="utf-8">
+<head>
+
+<title>Cartoon Network-Fan.com</title>
+<body>
+
+</head> 
+<body>
+
+
+
+<div class="navbar">
+<div class="navbar-left">
+
+<div class="navbar-item"><img 
+src="https://raw.githubusercontent.com/HectorLookAtMe/Sait/main/Cartoon_Network_logo_(1992-2010).svg.png" alt=" " width="400" height="100">
+</div>
+</div>
+</div>
+
+<div class="navbar" style=" background-image: url('https://raw.githubusercontent.com/HectorLookAtMe/Sait/main/Background.png'); width=100% ">
+
+
+
+
+<form name="myForm" action="/submit_form.php" onsubmit="return validateForm(); event.preventDefault();">
+  <label for="fname">Име:</label><br>
+  <input type="text" id="fname" name="fname" value=" "  style="height:30px; width:400px"><br>
+  <label for="lname">Фамилия:</label><br>
+  <input type="text" id="lname" name="lname" value=" " style="height:30px; width:400px"><br>
+    <label for="lname">E-mail:</label><br>
+  <input type="text" id="e-mail" name="e-mail" value=" " style="height:30px; width:400px"><br>
+    <label for="lname">Парола:</label><br>
+  <input type="text" id="password" name="password" value=" " style="height:30px; width:400px"><br>
+    <label for="lname">Повтори парола:</label><br>
+  <input type="text" id="password" name="password" value=" " style="height:30px; width:400px"><br><br>
+  
+  <input type="submit" value="SUBMIT" style="height:50px; width:100px">
+  <input type="reset" value="RESET" style="height:50px; width:100px">
+</form> 
+
+<script>
+function validateForm() {
+  var fname = document.forms["myForm"]["fname"].value;
+  var lname = document.forms["myForm"]["lname"].value;
+  var email = document.forms["myForm"]["email"].value;
+  var password = document.forms["myForm"]["password"].value;
+  var confirmPassword = document.forms["myForm"]["confirmPassword"].value;
+
+  if (fname == "") {
+    alert("Моля, въведете име.");
+    return false;
+  }
+
+  if (lname == "") {
+    alert("Моля, въведете фамилия.");
+    return false;
+  }
+
+  if (email == "") {
+    alert("Моля, въведете e-mail адрес.");
+    return false;
+  }
+
+  if (password == "") {
+    alert("Моля, въведете парола.");
+    return false;
+  }
+
+  if (confirmPassword == "") {
+    alert("Моля, повторете паролата.");
+    return false;
+  }
+
+  if (password !== confirmPassword) {
+    alert("Паролите не съвпадат.");
+    return false;
+  }
+}
+</script>
+
+</div>
+
+<div class="navbar-bottomlefts">© Петър Тинчев, 2023</div>
+</div>	
+</body>
+</html>
+
+
+<style>
+
+ body{
+	 margin:0;
+	 	 font-family: Times New Roman, sans-serif;
+		 font-size:30px;
+		 
+ }
+ .navbar{
+	 display:flex;
+	 text-transform: uppercase;
+	 
+	 align-items:center;
+	 justify-content:space-between;
+	 flex-direction:row;
+	 flex-wrap:wrap;
+	 align-content:center;
+	 background-color:#696969; 
+	 padding:10px;
+	 
+	  .navbar-left{
+		  display:flex;
+		  align-items:center;
+	  flex-wrap:wrap;
+	  flex-direction:row;
+	  text-decoration:none;
+	  color:black;
+       
+}
+  
+    	.navbar-bottomlefts
+	{ 
+	
+	display:flex;
+	 text-transform: uppercase;
+	 align-items:center;
+	 justify-content:space-between;
+	 flex-direction:row;
+	 flex-wrap:wrap;
+	 align-content:center;
+	 background-color:#696969;
+	padding:25px;
+	color:white;
+	}
+	 
+  
+  .navbar-item{
+	  margin-left:20px;
+	  cursor: pointer;
+	  text-decoration:none;
+
+	   background-color:black;
+  }
+  
+
+	
+</style>
